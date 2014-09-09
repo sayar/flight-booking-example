@@ -1,12 +1,38 @@
-# Flight-Booking-Example - A Basic Flight Booking System Example
+# Flight booking system
 
-By: [@ramisayar](http://ramisayar.com)
+This case study concerns a simplified flight booking system for a travel
+agency. A travel agency has asked you to design a flight booking system.
+The interviews with domain experts resulted in the following
+information.
 
-This project was developed as part of my Teaching Assistant duties at McGill University for ECSE 321 - Introduction to Software Engineering. The purpose of this project is to demonstrate a system built based on a UML Package Diagram, how to design a system using UML and how a design would translate into actual code. The project also demonstrates maven, javadoc and junit testing.
+1. Airline companies offer various flights.
 
-The Flight Booking System UML Diagram can be found in the Wiley book "UML in Practice", it is available in the McGill Schulich Library and you should have received a copy from your professor. The code base is split along the same packages and classes as in the diagram. The code faithfully follows the UML diagram and introduces no extra dependencies besides JUnit. The documentation has been pregenerated for you and can be found in the doc folder. I highly recommend you take a look at the integration and system tests to see an example of how the whole system integrates with each other.
+2. A flight is open to booking and closed again by order of the company.
 
-Enjoy!
+3. A customer can book one or more flights and for different passengers.
 
-Cheers,
-Rami Sayar - TA
+4. A booking concerns a single flight and a single passenger.
+
+5. A booking can be cancelled or confirmed.
+
+6. A flight has a departure airport and an arrival airport.
+
+7. A flight has a departure day and time, and an arrival day and time.
+
+8. A flight may involve stopovers in airports.
+
+9. A stopover has an arrival time and a departure time.
+
+10. Each airport serves one or more cities.
+
+Construct a UML class diagram for this model.
+
+* * *
+
+The code presented here corresponds to the UML diagram discussed in class. The
+project is split into two modules (or packages): one handles flight information
+and the other handles booking information. 
+
+The code also contains independent unit tests for each package, integration
+tests for the combined system, and system tests for testing the complete
+product.
